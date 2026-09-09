@@ -35,3 +35,4 @@ if drift_detected:
     print("⚠️  WARNING: Data drift detected! Model retraining recommended.")
 else:
     print("✅ No significant drift detected.")
+    

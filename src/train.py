@@ -42,3 +42,4 @@ with mlflow.start_run():
 
     print(f"Accuracy: {accuracy:.4f}")
     print(f"F1 Score: {f1:.4f}")
+    
