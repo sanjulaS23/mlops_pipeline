@@ -16,49 +16,53 @@ This project trains a machine learning model (Random Forest Classifier), tracks 
 - **flake8** — code linting
 
 ## Project Structure
+
+```
 mlops_pipeline/
 ├── .github/workflows/
-│ └── ml_pipeline.yaml # CI/CD pipeline definition
+│   └── ml_pipeline.yaml   # CI/CD pipeline definition
 ├── src/
-│ ├── data/
-│ ├── train.py # Trains model, logs to MLflow
-│ └── monitor.py # Checks for data drift
+│   ├── data/
+│   ├── train.py           # Trains model, logs to MLflow
+│   └── monitor.py         # Checks for data drift
 ├── requirements.txt
 └── README.md
-
+```
 
 ## How to Run Locally
 
 1. Clone this repository:
-git clone https://github.com/sanjulaS23/mlops_pipeline.git
-cd mlops_pipeline
-
+   ```
+   git clone https://github.com/sanjulaS23/mlops_pipeline.git
+   cd mlops_pipeline
+   ```
 
 2. Create and activate a virtual environment:
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-
+   ```
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1
+   ```
 
 3. Install dependencies:
-
-pip install -r requirements.txt
-
+   ```
+   pip install -r requirements.txt
+   ```
 
 4. Train the model:
-
-python src/train.py
-
+   ```
+   python src/train.py
+   ```
 
 5. View experiment results in MLflow UI:
-
-mlflow ui
-
+   ```
+   mlflow ui
+   ```
    Then open `http://127.0.0.1:5000` in your browser.
 
 6. Run drift monitoring:
-
-python src/monitor.py
-
+   ```
+   python src/monitor.py
+   ```
 
 ## CI/CD Pipeline
 
